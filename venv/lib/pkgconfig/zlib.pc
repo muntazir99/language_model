@@ -1,0 +1,13 @@
+prefix=/Users/muntazirjahangir/langchan/venv
+exec_prefix=/Users/muntazirjahangir/langchan/venv
+libdir=/Users/muntazirjahangir/langchan/venv/lib
+sharedlibdir=/Users/muntazirjahangir/langchan/venv/lib
+includedir=/Users/muntazirjahangir/langchan/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

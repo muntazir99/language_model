@@ -1,3 +1,4 @@
+#basic program to get response from openai
 from langchain.llms import OpenAI
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -18,7 +19,7 @@ def get_openai_response(question):
     response = client.completions.create(
         model="gpt-3.5-turbo-instruct",  
         prompt=question,
-        max_tokens=100,
+        max_tokens=1000,
         temperature=0.6,
     )
 
